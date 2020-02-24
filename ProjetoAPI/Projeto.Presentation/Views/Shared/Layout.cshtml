@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Projeto</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Sistema de Produtos</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Home/Index">Página inicial</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Manter Estoques
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/Estoque/Cadastro">Cadastrar Estoques</a>
+                            <a class="dropdown-item" href="/Estoque/Consulta">Consultar Estoques</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Estoque/Relatorio">Relatório de Estoques</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Manter Produtos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/Produto/Cadastro">Cadastrar Produtos</a>
+                            <a class="dropdown-item" href="/Produto/Consulta">Consultar Produtos</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Produto/Relatorio">Relatório de Produtos</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <br/>
+
+        <div class="container">
+            @RenderBody()
+        </div>
+
+    </div>
+
+    <!-- arquivos javascript -->
+    <script src="~/Scripts/jquery-3.0.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+</body>
+</html>

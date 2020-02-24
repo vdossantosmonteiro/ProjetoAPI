@@ -1,0 +1,9 @@
+C:\Users\Vinicius\Documents\Curso Coti\Aula11\Aula11\Projeto.DAL\bin\Debug\Projeto.DAL.dll
+C:\Users\Vinicius\Documents\Curso Coti\Aula11\Aula11\Projeto.DAL\bin\Debug\Projeto.DAL.pdb
+C:\Users\Vinicius\Documents\Curso Coti\Aula11\Aula11\Projeto.DAL\bin\Debug\Dapper.dll
+C:\Users\Vinicius\Documents\Curso Coti\Aula11\Aula11\Projeto.DAL\bin\Debug\Dapper.xml
+C:\Users\Vinicius\Documents\Curso Coti\Aula11\Aula11\Projeto.DAL\obj\Debug\Projeto.DAL.csprojAssemblyReference.cache
+C:\Users\Vinicius\Documents\Curso Coti\Aula11\Aula11\Projeto.DAL\obj\Debug\Projeto.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Vinicius\Documents\Curso Coti\Aula11\Aula11\Projeto.DAL\obj\Debug\Projeto.DAL.csproj.CopyComplete
+C:\Users\Vinicius\Documents\Curso Coti\Aula11\Aula11\Projeto.DAL\obj\Debug\Projeto.DAL.dll
+C:\Users\Vinicius\Documents\Curso Coti\Aula11\Aula11\Projeto.DAL\obj\Debug\Projeto.DAL.pdb

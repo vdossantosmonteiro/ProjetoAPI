@@ -1,0 +1,40 @@
+﻿@model List<Projeto.Presentation.Models.EstoqueConsultaModel>
+
+@{
+    ViewBag.Title = "Consulta";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h4>Consulta de Estoques</h4>
+<hr />
+
+<strong>@TempData["Mensagem"]</strong>
+
+<table class="table table-borderless table-striped table-hover">
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Nome do Estoque</th>
+            <th>Operações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.IdEstoque</td>
+                <td>@item.Nome</td>
+                <td>
+                    <a href="/Estoque/Edicao/@item.IdEstoque" class="btn btn-primary btn-sm">Atualizar</a>
+                    <a href="/Estoque/Exclusao/@item.IdEstoque" class="btn btn-danger btn-sm">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">Quantidade de registros: @Model.Count</td>
+        </tr>
+    </tfoot>
+</table>
+

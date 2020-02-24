@@ -1,0 +1,47 @@
+﻿@model Projeto.Presentation.Models.ProdutoEdicaoModel
+@{
+    ViewBag.Title = "Edicao";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2>Edicao</h2>
+
+@using (Html.BeginForm())
+{
+    <div class="text-danger">
+        @Html.ValidationSummary()
+    </div>
+
+    <label>Código:</label>
+    @Html.TextBoxFor(model => model.IdProduto,
+        new { @class = "form-control col-md-4", @readonly = "readonly" })
+    <br />
+
+    <label>Nome do Produto:</label>
+    @Html.TextBoxFor(model => model.Nome,
+        new { @class = "form-control col-md-4" })
+    <br />
+
+    <label>Preço:</label>
+    @Html.TextBoxFor(model => model.Preco,
+        new { @class = "form-control col-md-4" })
+    <br />
+
+    <label>Quantidade:</label>
+    @Html.TextBoxFor(model => model.Quantidade,
+        new { @class = "form-control col-md-4" })
+    <br />
+
+    <label>Selecione o Estoque:</label>
+    @Html.DropDownListFor(model => model.IdEstoque, Model.Estoques,
+            "Escolha uma opção", new { @class = "form-control col-md-4" })
+    <br />
+
+    <input type="submit" value="Atualizar Estoque"
+           class="btn btn-success" />
+    <br />
+    <br />
+
+    <strong>@TempData["Mensagem"]</strong>
+}
+

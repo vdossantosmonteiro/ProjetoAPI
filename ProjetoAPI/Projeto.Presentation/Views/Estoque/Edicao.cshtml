@@ -1,0 +1,34 @@
+﻿@model Projeto.Presentation.Models.EstoqueEdicaoModel
+@{
+    ViewBag.Title = "Edicao";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h4>Edicao</h4>
+<hr />
+
+@using (Html.BeginForm())
+{
+    <div class="text-danger">
+        @Html.ValidationSummary()
+    </div>
+
+    <label>Código:</label>
+    @Html.TextBoxFor(model => model.IdEstoque,
+        new { @class = "form-control col-md-4", @readonly = "readonly" })
+    <br />
+
+    <label>Nome do Estoque:</label>
+    @Html.TextBoxFor(model => model.Nome,
+        new { @class = "form-control col-md-4" })
+    <br />
+
+    <input type="submit" value="Atualizar Estoque"
+           class="btn btn-success" />
+    <br />
+    <br />
+
+    <strong>@TempData["Mensagem"]</strong>
+}
+
+
